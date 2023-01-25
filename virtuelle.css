@@ -1,0 +1,252 @@
+body {
+    background-image: url('images/table.png');
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+li {
+    margin: 5px 0;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1.5fr 1.4fr 1fr; 
+    grid-template-areas:
+        'one two three'
+        'four five six'
+        'seven eight nine';
+}
+
+.one { grid-area: one}
+
+.two { grid-area: two}
+
+.three { grid-area: three}
+
+.four { grid-area: four}
+
+.five { grid-area: five}
+
+.six { grid-area: six}
+
+.seven { grid-area: seven}
+
+.eight { grid-area: eight}
+
+.nine { grid-area: nine}
+
+
+
+.toolNames {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#titel {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    padding-left: 85%;
+}
+
+#temperatur {
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 12%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#thermometer {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 0px;
+    padding-bottom: 150px;
+    width: 50px;
+    height: 150px;
+}
+
+#regler {
+    padding-left: 75px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    width: 35px;
+    height: 150px;
+}
+
+#analyse {
+    padding-left: 50px;
+    width: 110px;
+    height: 150px;
+}
+
+#neuerKolben {
+    padding-left: 150px;
+    padding-top: 50px;
+    width: 110px;
+    height: 150px;
+}
+
+#reablau {
+    width: 75px;
+    height: 250px;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+#reagelb {
+    width: 75px;
+    height: 250px;
+    padding-right: 50px;
+}
+
+#rearot {
+    width: 75px;
+    height: 250px;
+}
+
+#reagenzTitel {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reagenzInfos {
+    width: 500px;
+    padding-left: 20px;
+}
+
+#aufgabe {
+    padding-top: 125px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#aktuelleAufgabe {
+    padding-left: 20px;
+    width: 550px;
+}
+
+#todoListTitel {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 70px;
+    padding-top: 70px;
+    
+}
+
+#todoList {
+    padding-left: 50px;
+    width: 550px;
+}
+
+#historyTitel {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+#history {
+    padding-left: 90px;
+    width: 450px;
+    height: 207px;
+    overflow: hidden;
+}
+
+.fertig {
+    text-decoration: line-through;
+}
+
+.invisible {
+    visibility: hidden;
+}
+h1 {
+    font-size:80px; 
+    color: transparent;
+    text-align:center;
+    animation: effect 2s linear infinite;
+            
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+                #008000, #ffff00);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+                #b80000, #4bedfc);
+        -webkit-background-clip: text;
+    }
+}
+
+h2 {
+    font-size:35px; 
+    color: rgb(0, 0, 0); 
+}
+
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: blue;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: rgb(0, 174, 255);
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#time{
+    text-align: center;
+    font-size:25px; 
+}
